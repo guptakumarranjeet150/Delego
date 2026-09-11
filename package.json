@@ -10,9 +10,9 @@
     "pnpm": ">=9.0.0"
   },
   "scripts": {
-    "build": "turbo run build",
-    "dev": "pnpm --filter @delegolabs/web dev",
-    "dev:web": "pnpm --filter @delegolabs/web dev",
+    "build": "node init && turbo run build",
+    "dev": "node init && pnpm --filter @delegolabs/web dev",
+    "dev:web": "node init && pnpm --filter @delegolabs/web dev",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
